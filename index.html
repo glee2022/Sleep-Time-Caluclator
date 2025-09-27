@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Sync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'cream': '#fcf3d9',
+              'soft-pink': '#f7caca',
+              'mint-green': '#a6e3d0',
+              'baby-blue': '#a1c8e9',
+              'lavender': '#d3b5e5',
+              'dark-pixel': '#4a4259',
+              'gold-star': '#f7d87b',
+            },
+            fontFamily: {
+              pixel: ['"Pixelify Sans"', 'sans-serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            boxShadow: {
+              'pixel': '4px 4px 0px 0px #4a4259',
+              'pixel-sm': '2px 2px 0px 0px #4a4259',
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+<style>
+  /* Simple CSS animation for blinking effect */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  .animate-blink {
+    animation: blink 1.5s infinite;
+  }
+</style>
+</head>
+  <body class="bg-cream text-dark-pixel font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

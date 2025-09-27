@@ -1,0 +1,5 @@
+{
+  "name": "Sleep Sync: Bed/Wake Time Calculator",
+  "description": "Helps users pick the best bedtime or wake-up time for high-quality sleep by aligning it with their natural sleep cycles, personalized by age and habits.",
+  "requestFramePermissions": []
+}
